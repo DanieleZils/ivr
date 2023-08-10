@@ -42,13 +42,13 @@ def handle_key():
         # Handle support option (you can add your logic here)
         response = VoiceResponse()
         response.say("You selected support. Forwarding your call to the support team.")
-        # Add further actions or redirects as needed
+       
 
     elif digit_pressed == '2':
         # Handle sales option (you can add your logic here)
         response = VoiceResponse()
         response.say("You selected sales. Forwarding your call to the sales team.")
-        # Add further actions or redirects as needed
+       
 
     else:
         # Invalid option
