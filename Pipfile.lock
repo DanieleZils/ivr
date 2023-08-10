@@ -1,12 +1,12 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "61ec5f6ee5bed44e82ddb9bfc017089d7ca8b869343ee3dec7444ded1f24010f"
+            "sha256": "70c7000ef62747567842da4f2c60d2223497b8a5fb66cde8e6aa722e4f625fdc"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_full_version": "3.8.13",
-            "python_version": "3.8"
+            "python_full_version": "3.9.7",
+            "python_version": "3.9"
         },
         "sources": [
             {
@@ -516,7 +516,7 @@
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
                 "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==1.16.0"
         },
         "twilio": {

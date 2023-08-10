@@ -3,6 +3,11 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
+
+@app.route('/')
+def home():
+    return "Daniele's IVR"
+
 # Route to handle incoming calls
 @app.route('/incoming_call', methods=['POST'])
 def incoming_call():
