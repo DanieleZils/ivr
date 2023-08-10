@@ -1,14 +1,19 @@
 from signalwire.voice_response import VoiceResponse, Gather
 from flask import Flask, request
 from signalwire.rest import Client as SignalWireClient 
+import os
+from dotenv import load_dotenv 
+
+load_dotenv()
 
 app = Flask(__name__)
 
 # SignalWire credentials
-account_sid = '1af50fb5-cbf5-4dda-8427-9958ea296ff2'
-auth_token = 'PTb76b85a669f0cfd94a0f23a7f056f347d55a359cad6ba69c'
-space_url = 'danielezils.signalwire.com'
-client = SignalWireClient(account_sid, auth_token, space_url=space_url)
+account_sid = os.environ['SIGNALWIRE_PROJECT']
+auth_token = os.environ['SIGNALWIRE_TOKEN']
+space_url = os.environ['SIGNALWIRE_SPACE_URL']
+signalwire_number = os.environ['SIGNALWIRE_NUMBER']
+client = SignalWireClient(account_sid, auth_token, signalwire_space_url=space_url)
 
 @app.route('/')
 def home():
