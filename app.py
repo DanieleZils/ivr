@@ -18,7 +18,7 @@ def incoming_call():
         gather.say("Thanks for calling Daniele. Press 1 for support, Press 2 for sales.")
 
     # If no input received, redirect back to the main menu
-    response.redirect('/incoming_call')
+    response.append(gather) 
 
     return str(response)
 
